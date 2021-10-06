@@ -37,16 +37,15 @@
 # [관련 이미지 & 동영상]
 
 - 이미지  
-  <img src="./img/2주차 컨셉1.png">
-- 동영상
-  [![](./img/그림.png)](https://www.youtube.com/watch?v=5xy4n73WOMM)
+  <img src="./img/1주차 프린세스메이커.jpg">
+  
+  <img src="./img/1주차 프린세스클리프하우스.jpg">
 
 <br><br>
 
 # [대표 이미지]
 
-![그림](./img/2주차 컨셉1.png)
-
+<img src="./img/2주차 컨셉1.png">
 <br><br>
 
 # [컨셉 & 대표이미지 기반 작품묘사]
