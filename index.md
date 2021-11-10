@@ -289,7 +289,7 @@ UI : 공주님이라는 타이틀에 맞춰 버튼을 아기자기하게 디자�
 
 <img src="./img/메인배경.png">
 메인 배경 화면
-<img src="./img/캐릭터.png">
+<img src="./img/캐릭터.jpg">
 캐릭터
 <img src="./img/외출.png">
 외출 화면
