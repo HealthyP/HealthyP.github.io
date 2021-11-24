@@ -389,12 +389,12 @@ UI : 공주님이라는 타이틀에 맞춰 버튼을 아기자기하게 디자�
 3. 전체적으로 디자인 마무리하기. -> 0%
 
 ### Fade.cs
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System;
+using System.Collections;  
+using System.Collections.Generic;  
+using UnityEngine;  
+using UnityEngine.UI;  
+using UnityEngine.SceneManagement;  
+using System;  
 
 public class Fade : MonoBehaviour
 {
@@ -436,3 +436,65 @@ public class Fade : MonoBehaviour
     }
 
 }
+
+### Button.cs
+using System.Collections;  
+using System.Collections.Generic;  
+using UnityEngine;  
+using UnityEngine.SceneManagement;  
+
+public class Button : MonoBehaviour
+{
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Out()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Park()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void Hiking()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void PT()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+### TextValue.cs
+using System;  
+using System.Collections;  
+using System.Collections.Generic;  
+using UnityEngine;  
+using UnityEngine.UI;  
+
+public class TextValue : MonoBehaviour
+{
+    public Text PrincessWeight;
+    public Text PrincessStress;
+    public Text PrincessHappy;
+
+    public Text Dday;
+
+    public int weight = 100;
+    public int stress = 0;
+    public int happy = 0;
+    public int day = 7;
+
+    public void Start()
+    {
+        PrincessWeight = GameObject.Find("WeightText").GetComponent<Text>();
+        PrincessStress = GameObject.Find("StresstText").GetComponent<Text>();
+        PrincessHappy = GameObject.Find("HappyText").GetComponent<Text>();
+        Dday = GameObject.Find("DayText").GetComponent<Text>();
+    }
