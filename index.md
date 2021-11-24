@@ -24,6 +24,7 @@
 ### 10. [개발작업 2주차](#개발작업-2주차)
 ### 11. [개발작업 3주차](#개발작업-3주차)
 ### 12. [개발작업 4주차](#개발작업-4주차)
+### 13. [개발작업 5주차](#개발작업-5주차)
 
 # [컨셉]
 
@@ -371,3 +372,67 @@ UI : 공주님이라는 타이틀에 맞춰 버튼을 아기자기하게 디자�
  
 <img src="./img/시작하면최종.png">
 <img src="./img/메인화면종.PNG">
+
+ # [개발작업 5주차]
+작업 명 : 프로그래밍
+해당 요구사항 :
+1. 프로그래밍
+
+작업내용 :
+1. 스텟조정
+2. 날짜변경
+3. 전체적으로 디자인 마무리하기.
+
+작업 결과 :
+1. 스텟조정 -> 20%
+2. 날짜변경 -> 20%
+3. 전체적으로 디자인 마무리하기. -> 0%
+
+### Fade.cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
+
+public class Fade : MonoBehaviour
+{
+    public UnityEngine.UI.Image fade;
+    float fades = 1.0f;
+    float time = 0;
+    
+    public void T()
+    {
+        Time.timeScale = 0;
+    }
+   
+    public void Update()
+    {
+        
+        time += Time.deltaTime;
+        if (fades > 0.0f && time >= 0.2f)
+        {
+            fades -= 0.1f;
+            fade.color = new Color(0, 0, 0, fades);
+            time = 0;
+        }
+
+        else if (fades <= 0.0f)
+        {
+            Time.timeScale = 0;
+
+            time += Time.fixedDeltaTime;
+            if (time >= 7.0f)
+            {
+                Time.timeScale = 1;
+                SceneManager.LoadScene(2);
+                time = 0;
+            }
+
+
+        }
+
+    }
+
+}
