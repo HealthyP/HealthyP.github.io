@@ -480,16 +480,16 @@ using UnityEngine.UI;
 
 public class TextValue : MonoBehaviour
 {
-    public Text PrincessWeight;
-    public Text PrincessStress;
-    public Text PrincessHappy;
+    public Text PrincessWeight;  
+    public Text PrincessStress;  
+    public Text PrincessHappy;  
 
-    public Text Dday;
+    public Text Dday;  
 
-    public int weight = 100;
-    public int stress = 0;
-    public int happy = 0;
-    public int day = 7;
+    public int weight = 100;  
+    public int stress = 0;  
+    public int happy = 0;  
+    public int day = 7;  
 
     public void Start()
     {
