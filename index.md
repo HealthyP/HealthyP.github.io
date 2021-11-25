@@ -498,3 +498,11 @@ public class TextValue : MonoBehaviour
         PrincessHappy = GameObject.Find("HappyText").GetComponent<Text>();
         Dday = GameObject.Find("DayText").GetComponent<Text>();
     }
+     void Awake()
+    {
+        PrincessWeight.text = "몸무게 : " + weight.ToString() + " Kg";
+        PrincessStress.text = "스트레스 : " + stress.ToString() + " %";
+        PrincessHappy.text = "행복지수 : " + happy.ToString() + " %";
+        Dday.text = "D-day " + day.ToString();
+    }
+}
